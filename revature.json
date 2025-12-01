@@ -1,0 +1,35 @@
+{
+  "type": "java",
+  "testFiles": [
+    {
+      "path": "src/test/java/SeleniumTest.java",
+      "testCases": [
+        {
+          "methodName": "testRegistrationForm",
+          "label": "Verify registration form submission flow",
+          "description": "Fills out the registration form fields (name, email, password, gender, birthdate, terms checkbox), submits the form, and verifies that the success message 'Registration successful!' is displayed."
+        },
+        {
+          "methodName": "testLoginForm",
+          "label": "Verify login form authentication flow",
+          "description": "Enters login credentials, submits the login form, checks that the success message 'Login successful!' appears, and asserts that the logged-in user name element displays 'John Doe'."
+        },
+        {
+          "methodName": "testFeedbackForm",
+          "label": "Verify feedback form submission and button state",
+          "description": "Submits feedback with a comment and rating, verifies the success message 'Feedback submitted!', and then confirms that the 'Submit Feedback' button is disabled after submission."
+        },
+        {
+          "methodName": "testFormValidation",
+          "label": "Verify registration form validation messages",
+          "description": "Attempts to submit the registration form with missing or invalid values (empty name, invalid email format, empty password) and asserts that each field shows a non-empty HTML validationMessage."
+        },
+        {
+          "methodName": "testGenderSelect",
+          "label": "Verify gender select dropdown behavior",
+          "description": "Checks the default selected gender option is 'Male', then changes the selection to 'Female' and 'Other' respectively, verifying that the dropdown reflects each selected value."
+        }
+      ]
+    }
+  ]
+}
